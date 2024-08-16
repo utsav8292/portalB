@@ -16,11 +16,16 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+// const corsOptions = {
+//   origin: ["https://portal-f.vercel.app/"],
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+//   credentials: true,
+// };
+
 const corsOptions = {
-  origin: ["https://portal-f.vercel.app/"],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true,
-};
+    origin:'https://portal-f.vercel.app/',
+    credentials:true
+}
 
 app.use(cors(corsOptions));
 
