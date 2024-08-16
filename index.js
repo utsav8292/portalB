@@ -23,7 +23,7 @@ app.use(cookieParser());
 // };
 
 const corsOptions = {
-    origin:'https://portal-f.vercel.app/',
+    origin:'https://portal-f.vercel.app',
     credentials:true
 }
 
